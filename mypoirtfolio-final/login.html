@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141313c2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+            background-color: #e7dede8f;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #eb3333;
+            border-radius: 5px;
+        }
+        
+        .login-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .login-button:hover{
+            transform: scale(1.2);
+        }
+
+        .note-container{
+            display: inline-block;
+  transition: transform 0.3s ease;
+        }
+        .note-container:hover{
+            transform: scale(1.2);
+        }
+
+        button img{
+  background-color: #141313c2;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+button img:hover{
+  transform: scale(1.2);
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="note-container"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAalJREFUaEPtWb1KA0EQ/vbWPICIEoNYCRpsUvoKCXd5AQsLhbyTBLGwDyQLIb3WNtGzsIsRROILxGRDxEKOrJfZm1NC5tqb+fb7md077hRW/FIrzh8i4L8TzJxAOQztTxGxMb9iUuvTDBIBVEep9eudwHGtVpxq3YS1JwC20txgvj+ywN3nZHLx3O2+u7Cde+CLfBDcAygyE6PCDYLxuPLQ630sanQKOArDGwWcUlfLo14pdfnY6TRIAspR9Aprd/Mg5IE5iI3ZpwlInO8ei7K2uJ4vzhFKHnesbDzARICHaawt7AmkvfNQ2aeNrAhIOioJJBz58xGiznjWevY9kJUQtV8EUB3jrmdPYNlTKG1zLitUBPg+BySBb+fYR2jZ2eWqEwFcTvriSAK+znH1SQJcTvriSAK+znH1SQJcTvrirGUCQwAlX8eY+4axMXuLMN3fRqPoGtaeMRPxhbuKjTknCTioVrc3tO4rYMd3VY4+C7ygUKg8tVojkoB58WG9Xgqm0yaA+S+mTQ5CBIwRrL3VWjf67fabqy/zb1YCoVxKRUAuthJAVz6BGRPN8TG+aGZCAAAAAElFTkSuQmCC"/></div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="enter password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <br><br>
+            <button id="customBackButton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAU5JREFUWEft1l1Og0AUBeBznLIyfYS6Ax/8eaibsHULRo3GGLdgmb5p0h25gAauIYISU5gZmEFM6Gtb7se5lzsQI/twZB5MIFNHpoSCJhTL7lAzejcVcfm+c8vmkj0KcAHgKqW6dina9ttOoESyWwCX1YUJidecbXygnEG1ZKr69ynVN64vygkUGlPcjDVoCIwdSIRz5A/lAAdpU73N7Ql9YV4EOKn9yevM/J65ZtAejADPmuqs7+C6P/ZNGBycg5RhQSKMkT8ROK0V/gBwQ8ArJke+1Yy2zTO0f2aCBUJgtaZa/iNQQR1Vy6rsRjXUf4xyXoyhd5H5LBt4W5tB5aAPdZ7Zgcq5GuLEdwIVrtAoZ1CBSiS7A7D42bCSpJxpHyu9E6ielABLTbXygbF7QWupdCy7o1dGb74wvUE+IdW1OrcsBGZKyCbVqWWmlD4Bn/eqJQsH8vkAAAAASUVORK5CYII="/></button>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+           
+            if (username === "" || password === "") {
+                alert("Both fields are required.");
+                return;
+            }
+
+            alert("Login successful!");
+        });
+
+        function goBack() {
+    const firstPageURL = "damn.html";
+    
+    window.location.href = firstPageURL;
+}
+document.getElementById("customBackButton").addEventListener("click", goBack);
+    </script>
+</body>
+</html>

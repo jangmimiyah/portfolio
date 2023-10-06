@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbmmii</title>
+    <link rel="stylesheet" href="bbmmii.css">
+</head>
+<body>
+    <body>
+        <button id="customBackButton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAU5JREFUWEft1l1Og0AUBeBznLIyfYS6Ax/8eaibsHULRo3GGLdgmb5p0h25gAauIYISU5gZmEFM6Gtb7se5lzsQI/twZB5MIFNHpoSCJhTL7lAzejcVcfm+c8vmkj0KcAHgKqW6dina9ttOoESyWwCX1YUJidecbXygnEG1ZKr69ynVN64vygkUGlPcjDVoCIwdSIRz5A/lAAdpU73N7Ql9YV4EOKn9yevM/J65ZtAejADPmuqs7+C6P/ZNGBycg5RhQSKMkT8ROK0V/gBwQ8ArJke+1Yy2zTO0f2aCBUJgtaZa/iNQQR1Vy6rsRjXUf4xyXoyhd5H5LBt4W5tB5aAPdZ7Zgcq5GuLEdwIVrtAoZ1CBSiS7A7D42bCSpJxpHyu9E6ielABLTbXygbF7QWupdCy7o1dGb74wvUE+IdW1OrcsBGZKyCbVqWWmlD4Bn/eqJQsH8vkAAAAASUVORK5CYII="/></button>
+        <div class="container">
+            <h2><span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAUdJREFUWEftmEFOg1AQhr+JIbjorho9DXajV1Av0q12a+I96hE0MWk5jaR150LS6BiwjTZC7TRTfShsIC/vDR//PwNvEAI7JDAemgPUe9LDl4grEU5QDlyUFDJV7nZm9EcdeaiKWatQkusQOHUB+RrkJo3lzAb0rBOEva0AKdN0V/ZtQLnqYkEai0uuJWvEXGVZC1Q40kyFgIFTcl98l5drKeQEsxSmrlAaDKSMEUblYyo9hKP5tW18rpOHQoM0lssiXpJrcV7kg3W8RPqDQAFa5lpsHpYFBhSgZdZqqpvfVtn7CxO2rpA1qf8bkLXKfsCytsqWkvZzh7DRNqPOYsfth7XKVs7f5Fs2BbquFB/BHtNYKpvQX2mlBYbjWM5NnWvxs+E14hrlGKGy7TWrJ2Qot9GM/n1HMhOQ+WZOC1x6dieWMkxwQG9T9Us07e6zeQAAAABJRU5ErkJggg=="/></span>BMI Calculator</h2>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" placeholder="Enter your height">
+            <button onclick="calculateBMI()" id="calculate-button">Calculate BMI</button>
+            <div id="result"></div>
+        </div>
+        <script src="bbmmii.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damn</title>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="damn.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">My <span>Portfolio</span></a>
+  
+        <i class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></i>
+  
+        <nav class="navbar hidden" id="navbar">
+          <i class="bx bx-menu" id="close-icon" onclick="toggleMenu()"></i>
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contacts">Contacts</a>
+        </nav>
+      </header>
+  
+      <section class="home" id="home">
+        <div class="home-content">
+          <h3>hello, im</h3>
+          <h1 class="slideinleft">Princess_Ysha</h1>
+          <h3>And im an <span>ICT Student</span></h3>
+          <p>I study in Candon National High School</p>
+          <br><br>
+  
+          <a href="#" class="btn" id="navigateButton">another pic of me</a>
+        </div>
+  
+        <div class="home-img">
+          <img src="pussykat.jpg" alt="" />
+        </div>
+      </section>
+      <!--about me-->
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="lumehyah.jpg" alt="" />
+        </div>
+        <div class="about-content">
+          <h2 class="heading">About <span>MeEeEeEeEe</span></h2>
+          <h3>i like to play with my guitar and piano and sing along with it <br></h3>
+          <p>
+            i tend to sing only by myself but at some point i have created some songs
+          </p>
+          <a href="#" class="btn" id="navbutton">extra info here</a>
+        </div>
+        <div class="bebe">
+          <img src="baby.jpg" alt="">
+        </div>
+      </section>
+      <!--portfolio section-->
+      <section class="portfolio" id="portfolio">
+        <h2 class="heading">
+          what i've made so far<br>
+          <span>PROJECTS and extra furpics</span>
+        </h2>
+        <div class="portfolio-container">
+          <div class="portfolio-box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYNJREFUaEPtmU1Kw1AQx3+zci2i1CKeoUvv4sKFQvfuUvcWPYKIuPAounbjDWoFEb2BjRQNlNhk3svrpAYn28nM/D9mHiRP6PgjHcePE1i3g7UO5Fz24PMaOAC2Wgb7DjxAfiKM3qp6VxL4Af8I9FoGXm43gY2BcPqxDEcNgfEdcLhm8EX7KyEbxhJ4AXb/CIGJkO3HEsgXE4Ss1RMrZxzUv26EggpYOeQEQhXorANlgqlEyjsWKmDjHXACJcvcgfIMazPoI+Qj9K3A/z2FUs99LV/bwSK/sQMagNS4EwhVIFXpqvzQ/o1HSGtgHU/eAWuAWn0noClkHU92IHV5Uwk6AXdA+W2ijVjyCGkNrONOwFphrb47kHoKafnmDmgAUuNOIFSBVKUtvwemQN8KYGTdqZDtLcup+6C5BY4iG1m9fiNkx5EEzrdBnoAdK1SBdZ8hHwij+a3lr0e5Zr3ow6y4Zt0MbLiq1+aA72E2FM5eq4q2eu+1KmaLdZyAhaoxNTvvwBfHdlhAKDeAtwAAAABJRU5ErkJggg=="/>
+            <h3>My BMI Calculator</h3>
+            <p>
+              this is my very new work which is a bmi calculator, this is our pt2 this 1st sem
+            </p>
+            <a href="#" class="btn" id="naviBot">want to see?<br />
+              please muna</a
+            >
+          </div>
+  
+          <div class="portfolio-box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAc5JREFUaEPtmb1KA1EQhb8RG5/Axkqy8b+20BewswjY2CmoCJaCYCkIgpWipBFbwULfQQsfIP6tFoIg+AqiIzERNsnGzV73JkZmy+Tec+bMHGbn3hW6/JEujx8T0OkKWgX+XgVCLaBsIQw5BveMckEPJ+Tk7AvjQWf5YA5hGhhwwlXuEDYJ5DS6v9FCoV4DI04kjZsuqz9NZYRXIpDxJAGaEZkfmEBqkh5XgX8moE5xYlrvdQRhF5ipW3uOskFebhIxogtCrU1o6gqkFVAmv9dBhMeaQIV+cvKaKvjy4o4IaIG4ZSEmwMVCVoGIwcxCZqGqHTwlIvlN7InY2mg1A1aBplZIaH9mIbNQkgfMQtUM2ShhLzIbJTpwJrYDjR1oIhmwLtTpLpQ0Mnz/L7ygPKEUyctxw4VUL328sYYwD0y0CtuwLvXNnBvTFTBZt/UWGHaDa27puANNCRj9NZEfgGsCGYtCxwkoANtAzk8Mjqgtf+BwxCfUUYQ1lKUfIZQ94DD1LXUT0Ow/8oW6CuzH8inL5KXomqO4fdkLqIwRK8BBhLA8zywSyFGWwZex/AioiFgA1oF3lJ2v1urh8SfAQ7Dts1CbgvdroTaJ6HoLfQI0rTtATTOZUgAAAABJRU5ErkJggg=="/>
+            <h3>My Log-in form</h3>
+            <p>
+              this is my log in form which i made when i was in grade 11. It was one of our very first pt.
+            </p>
+            <a href="#" class="btn" id="aviBut"
+              >want to see?<br />
+              please muna ulit</a>
+          </div>
+  
+          <div class="portfolio-box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA1tJREFUaEPtl0toE1EUhv8zaaEq2LFL3ag7jeJCF9JmIhZEazcimSq48YGCiCCC4EIR0YWiO0WLVgoqgrmpG4vFhYQ2VRSkdGNtN0JBiiJtZmjrozZzZPoyTia5mZhpq8ws557H//3n3jsJ4R9/6B/XjwBgoSfo2wRSumoA1E9stQ6R2dIkkPED1k8AnhVMQFudMHQC5t6VC2ZeAGyxTHwsGjfvlkt4ljnlLjldL6WrTrd7NGFsLne3eZtAAeGDzNxBjGtam/nBK+BiAJjVPMGgU1GRvu0FYjEBTOkm4jORuHm9WIhFB+AVIgegS6+OEZTLUzcHrHNRYSaKdSM7zuUQO8skQlbovP0yo2QuAYgV7kMDbnpyAFK6+g7A+plifZowwn4AMJRwVIz02bW79Jr1BMvuK3ty9LgBGACq5ypVco32yEzLKjvXZRMoEQCaMP7Q7AbQC2DT3IeCUB+JG8lyAwCY2kKTCisE66J8C00rkAPE1JsgnPgtmN5oIr21BADLvlS85knihzRhrMqOyWnQGaupVch66SiUJKYLCi17Wys+fitGlOMsFZMij2G6qiXSZwsC2IvdutrOQKO8Ym4EETVG4ulnqZh6D4TDpdTIlxOyQutq24b7pQDJPapaUYkeAGu8CmDm5mjCPN6tVx9hUIvX/Pzx9FwT6V3O9bx79PWBmuU/J6xWAHs9ipjapzP57wGs9JjvFp4JWaENTvftQOkhk12Hbt2Y+Wg0YbZ06tX1CujFXwKMEdE+e1u61fEFAMC4kkG47okxmIqph0B8C6CqEkAGLSXUsO3xsD1J18cvALvZqyXfl+7Y8nToa3K/uroig4cA6oqE6AZwZ3TMiO/uwI9COX4C2H17J1HZsF18+cQAdTepJ8G4AmCJi6gRJtxXONMcEaMDRYL6cwYczYcIfDoizMf2++TB1VUVoyObmGgjFAqDsVZhiq+gtAgLTBQrfDbO7wlk63lJ4BvjVVXtOx98HvcqdCHOQL6ekwA6CdQDst5G4mb8b2DmcwKuOp0/zrzCBABeHXPGBxOQOVjKTwlZzez1YAIyt/JNwKtz5arj1FvyLRQAzFjp1YhgArMOeHUuOAPl/kMTTCA4xNMO/P/fAdmXeqHXpRNYaIGy/gGAzCG/138BKQORQEwCtdYAAAAASUVORK5CYII="/>
+            <h3>And an extra page for my loves</h3>
+            <p>
+             i just cant get over them because they are so cute 
+            </p>
+            <a href="#" class="btn" id="vanibor"
+              >want mo? <br />
+              with "Po" muna</a
+            >
+          </div>
+        </div>
+      </section>
+  
+      <!---contacts-->
+      <section class="contacts" id="contacts">
+        <h2 class="heading">
+          <span>you can contact me through theseee~~~</span>
+        </h2>
+        <div class="social-media">
+          <a href="https://www.facebook.com/princessysha.panizares?mibextid=avESrC"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAmdJREFUSEu1lk1oE1EQx//TGmNRDyJaabbNix8HQRHBiyKIB9EioqIHUbwoaClUWl8QD6IV8VDJW+3BD/TQi9CDWFD8OCkexJvQo7XKbprdFrSC2KAF645s2oTkZXc12sxx5+M3M+/NvCXUWajO8REJWNs1Gp+Oxw6BsQfAJgACAAOwCTQM9p6vzH8Zent3y8+wREMBhrTbGbhFs0Gj5AMzdbhm8kWQUSDASFu9YLpUQ/s8As7llFC6TxXAkNZlgC7WELzMlLodlewv960AtKSz+xqYH0cEn2Qm6cVmXk30rRnz7RLSzhAg53y8BtCOMZV8XYxRAqzo/LQk3vR9FMCqEMCM1+htGL+2eqRcrwF81Ujz1OTG4sGXAAlpdRDodkT2g44SR4v6Npnd5TG2gXg3gK0VbSE+kMukHvnfSgBD2k8A7A29bowLOVNcnW1L9jCBH4Qmw7jnmOKUDnABtIQ5MXGPm0ndKADSVjcxXY+odthRYrMO+AFg0TwBvjpKLNMBeQCLNcCEo0RoVb6tIe2XAHZqfnlHiaUawHoP0DrNcNxRIhE1E4a0cz5Hs3nnKLFer+A+gGO1VFDYVQtj03oCDAy4SpyoALSmrSPMNDgfZ0BB1xS9vMD4lv0IQlsQpIZbVGpPRQVzB9YO4Nl/ANhjbB83xZtijOpld9bqB9GZqr7+xRww4YqbERWLMmBdMxnSvgNQYRKL8scWMfc5Zuq8nljog5OQ2eME9qd1ue8UAXCZcNrNiKdBrY18Mo2eXBMaf50E4yAxhnKmuOkHaZV2JzPtB+Fh89TngX96MqOGqxZd3f8qfgNUiAwoOV5R8gAAAABJRU5ErkJggg=="
+            /><span>@Princess_Ysha</span></a
+          >
+          <a href="https://www.tiktok.com/@jangmimiyah?_t=8fnMSbknYBN&_r=1"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAi9JREFUSEu1lT9o1FAcx7+/5FSEDoIIhSYmUaml6OIidqiT4iDOCq3/im4KNncgunSy4uWdkxQXsbUVBxEcXQTr4qSgCJXzejnzrpO4iHhizU/S3p0hubRJz77p8fj9vp/fv/ceYZMXbbI+MgM0250BMNoM7JMU5sBaQXYL8BtqY8fXOwPfkyDdAsDEN+qONfnfAHq+Os1MZ0OCP5lwsu6YLztBMmfQARDoLhNozmc8ZfI/LwlroQXLDIg0ORY0Ec94jnVuw4BIBr8AqABy/wRp2hPG+XUBvVfKu9StWy4RMAjCTp9wc6lovo0AKirh2DLjFgGnA1FCCoCWd8fAuAdgW7sGTKOyZMxGAVKY+wIb7Zq3HTlowV4W9XJiBrpdPcOgx7HiNgGRHlRagFRjuhKF8mcRQG/IwQfwgYhve471JCmDdAC7dhng+yHjOfjqVXlX/9Y66wrQZ1efE+hUU2xBCmMQIA5H1xVAs6vvAToYCDLoYV0YF6Kpa3n3ERgjq+dclsLqT/3Yabb7BsDhpsM7KcxDMYDtBrd0/+o5zUthHM0AqE0CfL09Yooy7BV3v27Xv7B4nH3lRUjwgRTmWGpA33iln0j9GLqZP5hQIrAPJh3AxbAYMx+pl6wg68QVe4u0+CR1dibMSsdsfTzpAYGlNl4bAfEUgJ6OnoRXuR4+4U5YjbWiX+lSkoFe+LIXzAVmfwigAwB+M/BMgT/liT3z6wm3+5jWcKN2mf+DrKC/VDriGY1AHTcAAAAASUVORK5CYII="
+            /><span>@jangmimiyah</span></a
+          >
+          <a href="Https://www.Instagram.com/jangjangmeh"
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAxNJREFUSEvFlU9IVFEUxr9zZygxqo20cOb5rpRQIVFhRES1KAmEkFKsrDZt+rMInDcaFIFBFKn3KQXRohYRltJfCoKoXQQSSQhlheY8Z+64yFUqRDq+E290ZMZmVALxLh/fO79zznfuuYRFPrTI8bE0AKM+utZ13RCBdwFUCuRMhAH+zKB3JHxtutnom92RfyoIWJHTBLoBwA8gyqAuIvdbtlYSYytDbAbYADAB4KxW8k66NgNg1EXLWLhdAPeS8B2MNRf9WIhHRjhayuy+AFDkMrYN2fJT6r8MQDDkPAWhwj/J6522Yme+4AFr8ASBLwP45TJOCsJHAM+1klXZAZbjBe3VSlZkBG9kYYw65S6wkUhMCsbXqCp6a9RFylmI1yBEdYs0g5bjAQq0kjIXYIRA7TFlnkkJCkP9hiB/J4AdGVDmd0ziLoF/MmhNXJn3kh0A9mtbrsgFcAG0aCUbkoJGFsHRwfcAvIzCE5R4k5fw+xKCykHcBKAvrszdALEnN6xIJ4OqtZK+XAAmpmsx27zgCQLhwRpi7mSmmrhtPkqvwAhFDjNRB7GojNlFnsEIWM5DAg5rJUVOAMBNWhWf9wRBy/GyrP/zO3/l8K01Y+mAQmuoQGB8mIErcSUvJfUhpx2EWq3kzPBkTpHleBW0xWyzbgoQuQ5QQ974xOr+myUj2QAEXI0peTGpDzv3wTg+NwBojSkZms6oCoTHYFRrWz5JBwTDTi0Y7ektmq7gyHwezFSQZrLptcozeZlY5ncTvI+Im8H8XdtyzyyTK7WSebk8GAO4XaviUylBoEEHRSLRwYSds8cU7D+qW4146vv0Rd2rlVydC+Atq75sFy04NljJjAOCaBwuvYrZxstU5qlgRsjpZsIqrWRJrlXhTcEh/yRvWMiqyPRkYBNY9IDxQNvyWFZAYcjZIgjdAHqES1XRVnNgvn00NT3J4M8AmAK0PapML0byzLWuvcvyAYTxpJKRAPMXEmI5M68DJdc5wJwPUBmABIPPxVXx7fSksr5o//PgCCHsbOt9aZ7MhfR9oZpFr+AvyMltKO8HzncAAAAASUVORK5CYII="
+            /><span>@jangjangmeh</span></a
+          >
+          <video class="myVideo" width="640" height="260" controls autoplay>
+            <source src="sideeye.mp4" type="video/mp4">
+        </video>
+        </div>
+        <br><br>
+        <a href="#" class="btn">back to top</a>
+      </section>
+      <script src="damn.js"></script>
+</body>
+</html>
